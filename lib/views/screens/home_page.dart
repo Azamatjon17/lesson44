@@ -22,11 +22,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Container(
         child: ListView(
+          padding: const EdgeInsets.all(25),
           children: [
             for (var i = 0; i < employeesControllers.list.length; i++)
               ListTile(
+                leading: Text("Age\n${employeesControllers.list[i].age}"),
                 title: Text(employeesControllers.list[i].name),
-                subtitle: Text(employeesControllers.list[i].position),
+                subtitle: Text("${employeesControllers.list[i].skills}"),
+                trailing: Text(employeesControllers.list[i].position),
               )
           ],
         ),

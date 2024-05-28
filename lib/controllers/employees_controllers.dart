@@ -1,4 +1,3 @@
-
 import 'package:lesson44/models/employe.dart';
 
 class EmployeesControllers {
@@ -6,6 +5,78 @@ class EmployeesControllers {
     "company": "Tech Solutions",
     "location": "San Francisco",
     "employees": [
+      {
+        "name": "Alice",
+        "age": 30,
+        "position": "Developer",
+        "skills": ["Dart", "Flutter", "Firebase"]
+      },
+      {
+        "name": "Bob",
+        "age": 25,
+        "position": "Designer",
+        "skills": ["Photoshop", "Illustrator"]
+      },
+      {
+        "name": "Alice",
+        "age": 30,
+        "position": "Developer",
+        "skills": ["Dart", "Flutter", "Firebase"]
+      },
+      {
+        "name": "Bob",
+        "age": 25,
+        "position": "Designer",
+        "skills": ["Photoshop", "Illustrator"]
+      },
+      {
+        "name": "Alice",
+        "age": 30,
+        "position": "Developer",
+        "skills": ["Dart", "Flutter", "Firebase"]
+      },
+      {
+        "name": "Bob",
+        "age": 25,
+        "position": "Designer",
+        "skills": ["Photoshop", "Illustrator"]
+      },
+      {
+        "name": "Alice",
+        "age": 30,
+        "position": "Developer",
+        "skills": ["Dart", "Flutter", "Firebase"]
+      },
+      {
+        "name": "Bob",
+        "age": 25,
+        "position": "Designer",
+        "skills": ["Photoshop", "Illustrator"]
+      },
+      {
+        "name": "Alice",
+        "age": 30,
+        "position": "Developer",
+        "skills": ["Dart", "Flutter", "Firebase"]
+      },
+      {
+        "name": "Bob",
+        "age": 25,
+        "position": "Designer",
+        "skills": ["Photoshop", "Illustrator"]
+      },
+      {
+        "name": "Alice",
+        "age": 30,
+        "position": "Developer",
+        "skills": ["Dart", "Flutter", "Firebase"]
+      },
+      {
+        "name": "Bob",
+        "age": 25,
+        "position": "Designer",
+        "skills": ["Photoshop", "Illustrator"]
+      },
       {
         "name": "Alice",
         "age": 30,
@@ -32,5 +103,9 @@ class EmployeesControllers {
     for (Map<String, dynamic> i in data) {
       _list.add(Employe.fromjson(i));
     }
+  }
+
+  addemployees({required String name, required int age, required String position, required List<String> skills}) {
+    _list.add(Employe(name: name, age: age, position: position, skills: skills));
   }
 }
